@@ -21,6 +21,10 @@ header {
     color: #00FF00;
 }
 
+.logo-link {
+    color: #00FF00;
+}
+
 nav a {
     color: #00FF00;
 }
@@ -67,9 +71,34 @@ nav {
     align-items: center;
 }
 
+.logo-link {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    gap: 0.5rem;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    color: var(--text-color);
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(2500%) hue-rotate(85deg) brightness(118%) contrast(108%);
+}
+
 .logo {
     font-size: 1.8rem;
-    color: var(--text-color);
+    color: inherit;
     font-weight: bold;
 }
 
@@ -265,6 +294,20 @@ a:focus {
         padding: 1rem;
         min-height: 44px;
         display: block;
+    }
+    
+    .logo-link {
+        min-height: 44px;
+        padding: 0.5rem;
+    }
+    
+    .logo-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
     }
     
     .hero {

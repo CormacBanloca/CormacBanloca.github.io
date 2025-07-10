@@ -194,6 +194,11 @@ h2 {
     color: var(--text-color);
 }
 
+.contact-info a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
 footer {
     background-color: var(--bg-color);
     color: var(--text-color);
